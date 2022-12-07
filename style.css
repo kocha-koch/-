@@ -1,8 +1,172 @@
 :root {
-    background-color: black; 
+  font-size: 62.5%;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  --white-color: #ffffff;
+  --pink-color: #fa0369;
+  --gray-color: #7e8597;
+  --chat-color: rgba(255, 255, 255, 0.1);
+  --header-color: #10151c;
+  --art-color: #141A25;
+  background-color: #202631;
+  box-sizing: border-box;
+}
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+header {
+  color: var(--header-color);
+  width: 375px;
+  height: 75px;
+}
+.chat {
+  text-decoration: none;
+  background-color: var(--chat-color);
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 100px;
+  width: 113px;
+  height: 38px;
+  margin-top: 1em;
+  margin-left: 5.5em;
+  position: absolute;
+  text-align: center;
+  padding: 1rem;
+}
+.tt {
+  color: var(--white-color);
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 80px;
+  text-align: center;
+}
+.buttonBOOK {
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--pink-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 100px;
+  margin-top: 1em;
+  margin-left: 1.65em;
+  display: block;
+  position: relative;
+  width: 327px;
+  height: 50px;
+  text-align: center;
+  padding: 1.5rem;
+}
+.lets {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-top: .5rem;
+  margin-left: 5.6rem;
+}
+.start {
+  color: var(--pink-color);
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  margin-top: 8rem;
+  margin-left: 11.2rem;
+}
+.art{
+  border-radius: 24px;
+  width: 327px;
+  height: 262px;
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: var(--art-color);
+  margin-top: 3em;
+  margin-left: 2.4em;
+}
+.steps {
+  color: var(--white-color);
+  background-color: var(--pink-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 6.3rem;
+  width: 6.7rem;
+  height: 2.8rem;
+  text-align: center;
+  padding: .5rem;
+  margin-top: 9em;
+  margin-left: 9.5em;
+  
+}
+.tsteps {
+  color: var(--gray-color);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  margin-top: 1.2rem;
+  height: 4.7rem;
+  text-align: center;
+  padding: 1rem;
+}
+.why {
+  color: var(--gray-color);
+  weight: 32.6rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin-top: 3rem;
+  margin-left: 2.4rem;
+  
+}
+.for {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+.whytt {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+.hstep{
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2.9rem;
+  width: 316px;
+  height: 84px;
+  
+}
+h2,
+h4 {
+  color: var(--white-color);
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  text-align: center;
+  margin-top: 8rem;
+ 
+}
+h3 {
+  color: var(--white-color);
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+  color: rgba(26, 26, 26, 0.56);
 }
 
-h2 {
-    color: #fff;
-    background-color: #000;
-   }
+div {
+  background-color: #ffffff;
+}
+footer {
+  background-color: #f9f9fb;
+}
