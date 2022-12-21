@@ -25,7 +25,7 @@ img {
   display: block;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
   
 }
 .img-baby
@@ -285,10 +285,17 @@ h3 {
   margin-top: 3rem;
 }
 .content3{ 
-  margin-right: 1.6rem;
-  float: right;
-  flex-direction: column;
-  margin-top: 1rem ;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+  
+}
+.content4{ 
+  margin-right: 0;
+  
+}
+.facebook{
+  margin-right: 20px;
 }
 .whiteblock{
   background-color:#FFFFFF;
@@ -298,10 +305,9 @@ h3 {
 footer {
   background-color: #f9f9fb;
   padding-top: 3.8rem;
-  height: 12rem;
+  padding-bottom: 3.8rem;
 }
 .footer {
- 
   font-weight: 400;
   font-size: 12px;
   line-height: 180%;
@@ -312,6 +318,7 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
 }
 .f{
   color: var(--footer-color);
