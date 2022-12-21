@@ -6,21 +6,80 @@
   --white-color: #ffffff;
   --pink-color: #fa0369;
   --gray-color: #7e8597;
+  --black-color: #1A1A1A;
   --chat-color: rgba(255, 255, 255, 0.1);
   --header-color: #10151c;
-  --art-color: #141A25;
-  background-color: #202631;
-  box-sizing: border-box;
+  --art-color: #141a25;
+  --footer-color: rgba(26, 26, 26, 0.56);
 }
 *,
-:before,
-:after {
-  box-sizing: inherit;
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-header {
-  color: var(--header-color);
-  width: 375px;
-  height: 75px;
+
+body{
+  background-color: #202631;
+}
+img {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+}
+.img-baby
+{
+  width: 221px;
+  height:381px;
+  margin-top:-27px;
+}
+.gradient{
+    height: 327px;
+    max-width: 327px;
+    display: block;
+    justify-content: center;
+    margin: 1.8rem auto;
+    background-color: #432371;
+    background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+border-radius: 14.0143px;
+}
+.gradient2{
+  height: 310px;
+  max-width: 327px;
+  display: block;
+  justify-content: center;
+  margin: 1.8rem auto;
+  background-color: #432371;
+  background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+border-radius: 1163.5px;
+}
+.width-1146px {
+  width: 100%;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*
+.adapt{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ad{
+  display: inline-block;
+  margin-left: 128px;
+ // flex-wrap: wrap;
+  //justify-content: center;
+}*/
+header .width-1146px {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: block;
 }
 .chat {
   text-decoration: none;
@@ -29,15 +88,12 @@ header {
   font-size: 1.4rem;
   line-height: 1.8rem;
   border-radius: 100px;
-  width: 113px;
-  height: 38px;
   margin-top: 1em;
-  margin-left: 5.5em;
-  position: absolute;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2.4rem;
+  display: block;
 }
-main{
+main {
   padding-top: 8rem;
   padding-left: 1px;
   padding-right: 1px;
@@ -46,8 +102,10 @@ main{
   color: var(--white-color);
   font-size: 3.2rem;
   line-height: 4.2rem;
-  margin: 0rem auto;
+  margin: 0 auto;
+  max-width: 523px;
   text-align: center;
+  margin-bottom: 4rem;
 }
 .buttonBOOK {
   text-decoration: none;
@@ -56,54 +114,110 @@ main{
   font-size: 1.4rem;
   line-height: 1.8rem;
   border-radius: 100px;
-  margin-top: 1em;
-  margin-left: 1.65em;
   display: block;
   position: relative;
-  width: 327px;
-  height: 50px;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.6rem 4.8rem;
+  max-width: max-content;
+  margin: 2.4rem auto 0;
+}
+.button {
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--pink-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 100px;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 1.6rem 4.8rem;
+  max-width: max-content;
+  margin: 2.4rem 0 0;
+}
+.pad{
+  padding-bottom: 10.8rem;
 }
 .lets {
   color: var(--white-color);
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.6rem;
-  margin-top: .5rem;
-  margin-left: 5.6rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  margin-bottom: 8rem;
+  
+}
+.cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content1{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.content2{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.icon{
+  margin-left: 0;
 }
 .start {
   color: var(--pink-color);
   font-size: 1.6rem;
   line-height: 2.1rem;
-  margin-top: 8rem;
-  margin-left: 11.2rem;
+  margin: 8rem auto;
+  text-align: center;
 }
-.art{
+.art {
   border-radius: 24px;
   width: 327px;
   height: 262px;
-  text-align: center;
+  /*text-align: center;*/
   display: block;
   position: relative;
   background-color: var(--art-color);
-  margin-top: 3em;
-  margin-left: 2.4em;
+  padding: 1.6rem 4.8rem;
+  /*max-width: max-content;*/
+  margin: 1.4rem auto 0;
 }
+
+.art2{
+  border-radius: 24px;
+  width: 328px;
+  height: 545px;
+  /*text-align: center;*/
+  display: block;
+  position: relative;
+  background-color: var(--art-color);
+  padding: 1.6rem ;
+  /*max-width: max-content;*/
+  margin: 1.2rem auto 0;
+} 
+
 .steps {
   color: var(--white-color);
   background-color: var(--pink-color);
   font-size: 1.4rem;
   line-height: 1.8rem;
   border-radius: 6.3rem;
-  width: 6.7rem;
-  height: 2.8rem;
+  /*width: 6.7rem;
+  height: 2.8rem;*/
   text-align: center;
-  padding: .5rem;
-  margin-top: 9em;
-  margin-left: 9.5em;
-  
+  padding: 0.5rem 1.4rem;
+  margin: 4.2rem auto 0;
+  max-width: max-content;
+  /*margin-top: 9em;*/
 }
 .tsteps {
   color: var(--gray-color);
@@ -111,65 +225,95 @@ main{
   font-size: 1.8rem;
   line-height: 2.3rem;
   margin-top: 1.2rem;
-  height: 4.7rem;
+  /*height: 4.7rem;*/
   text-align: center;
   padding: 1rem;
 }
 .why {
   color: var(--gray-color);
-  weight: 32.6rem;
+  /*weight: 32.6rem;*/
   font-size: 1.6rem;
+  max-width: 460px;
   line-height: 150%;
   margin-top: 3rem;
-  margin-left: 2.4rem;
-  
 }
 .for {
   color: var(--white-color);
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.3rem;
+  margin: 1.6rem auto;
 }
 .whytt {
   color: var(--white-color);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.1rem;
+  margin: 0  auto 4rem;
+  width: 276px;
 }
-.hstep{
+.hstep {
   text-align: center;
   margin-top: 2rem;
-  margin-left: 2.9rem;
-  width: 316px;
-  height: 84px;
-  
+  margin-bottom: 4rem;
+  /*width: 316px;
+  height: 84px;*/
 }
-h2,
-h4 {
+
+h2 {
   color: var(--white-color);
   font-size: 3.2rem;
   line-height: 4.2rem;
   text-align: center;
   margin-top: 8rem;
- 
+}
+h4{
+  color: var(--white-color);
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  margin-top: 6.4rem;
+  margin-left: 1rem;
+  margin-bottom: 4rem;
+}
+.h4black{
+  color: var(--black-color);
 }
 h3 {
   color: var(--white-color);
   font-size: 2.4rem;
   line-height: 3.1rem;
-  text-align: center;
   margin-top: 3rem;
 }
-.footer {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 180%;
-  color: rgba(26, 26, 26, 0.56);
+.content3{ 
+  margin-right: 1.6rem;
+  float: right;
+  flex-direction: column;
+  margin-top: 1rem ;
 }
-
-div {
-  background-color: #ffffff;
+.whiteblock{
+  background-color:#FFFFFF;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 footer {
   background-color: #f9f9fb;
+  padding-top: 3.8rem;
+  height: 12rem;
 }
+.footer {
+ 
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+  width: 11.1rem;
+  height: 4.4rem;
+}
+.foot{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.f{
+  color: var(--footer-color);
+}
+
