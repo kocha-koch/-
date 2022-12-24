@@ -11,11 +11,27 @@
   --header-color: #10151c;
   --art-color: #141a25;
   --footer-color: rgba(26, 26, 26, 0.56);
+  --max-width: 1146px;
 }
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+h1{
+  background-color: #10151c;
 }
 
 body{
@@ -28,22 +44,77 @@ img {
   margin-top: 10px;
   
 }
+.screen{
+  display: none;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*.imgsr{
+  display: block;
+  min-width: 324px;
+    min-height: 307px;
+    bottom: 0;
+    right: 10%;
+    position: absolute;
+}*/
+.imgsr2 {
+  display: block;
+}
+
+.imgsr {
+  display: none;
+  width: 558px;
+  height: 530px;
+}
+.baby{
+  display: block;
+  margin-top: -80px;
+}
+.baby2{
+  display: none;
+  margin-top: -20px;
+ 
+}
 .img-baby
 {
   width: 221px;
   height:381px;
   margin-top:-27px;
 }
+.gradient-baby{
+  height: 327px;
+  width: 327px;
+  display: block;
+  justify-content: center;
+  margin: 1.8rem auto;
+  padding-top: 80px;
+  background-color: #432371;
+  background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+border-radius: 14.0143px;
+}
+.gradient-baby2{
+  height: 560px;
+  width: 560px;
+  display: none;
+  justify-content: center;
+  margin: 1.8rem auto;
+  background-color: #432371;
+  background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+border-radius: 14.0143px;
+}
 .gradient{
     height: 327px;
-    max-width: 327px;
+    width: 327px;
     display: block;
     justify-content: center;
     margin: 1.8rem auto;
     background-color: #432371;
     background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
 border-radius: 14.0143px;
+margin-top: 40px;
 }
+
 .gradient2{
   height: 310px;
   max-width: 327px;
@@ -52,21 +123,37 @@ border-radius: 14.0143px;
   margin: 1.8rem auto;
   background-color: #432371;
   background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
-border-radius: 1163.5px;
+border-radius: 327px;
+margin-top: 80px;
+
 }
 .width-1146px {
   width: 100%;
-  max-width: 1146px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+ padding-left: 20px;
+  padding-right: 20px;
 }
-/*
+.imgad {
+  margin-top: -20px;
+}
 .adapt{
-  display: flex;
+  /*
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  display: block;
+  
+      flex-direction: row-reverse;
+      align-items: center;
+      column-gap: 128px;
+      margin-bottom: 90px;
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
 }
+/*
 .ad{
   display: inline-block;
   margin-left: 128px;
@@ -100,12 +187,15 @@ main {
 }
 .tt {
   color: var(--white-color);
+  background-image: linear-gradient(45deg, #c49393, #b50e9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   font-size: 3.2rem;
   line-height: 4.2rem;
   margin: 0 auto;
-  max-width: 523px;
+  max-width: 327px;
   text-align: center;
-  margin-bottom: 4rem;
+ /* margin-bottom: 40px;*/
 }
 .buttonBOOK {
   text-decoration: none;
@@ -120,7 +210,10 @@ main {
   padding: 1.6rem 4.8rem;
   max-width: max-content;
   margin: 2.4rem auto 0;
+  margin-top: 4rem;
+  box-shadow: 1px 3px 13px 3px  rgb(246 84 152 / 50%);
 }
+
 .button {
   text-decoration: none;
   color: var(--white-color);
@@ -135,6 +228,12 @@ main {
   max-width: max-content;
   margin: 2.4rem 0 0;
 }
+.leftButton {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-left: 0px;
+  margin-top: 48px;
+}
 .pad{
   padding-bottom: 10.8rem;
 }
@@ -146,7 +245,6 @@ main {
   margin: 0.5rem auto;
   text-align: center;
   margin-bottom: 8rem;
-  
 }
 .cont{
   display: flex;
@@ -236,6 +334,12 @@ main {
   max-width: 460px;
   line-height: 150%;
   margin-top: 3rem;
+
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 20px;
 }
 .for {
   color: var(--white-color);
@@ -282,12 +386,16 @@ h3 {
   color: var(--white-color);
   font-size: 2.4rem;
   line-height: 3.1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+.h3{
+  margin-top: 80px;
 }
 .content3{ 
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 10px;
+  margin-right: 20px;
   
 }
 .content4{ 
@@ -299,7 +407,8 @@ h3 {
 }
 .whiteblock{
   background-color:#FFFFFF;
-  padding-top: 80px;
+  padding-top: 180px;
+  
   padding-bottom: 80px;
 }
 footer {
@@ -308,6 +417,8 @@ footer {
   padding-bottom: 3.8rem;
 }
 .footer {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: 180%;
@@ -322,5 +433,202 @@ footer {
 }
 .f{
   color: var(--footer-color);
+  
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media screen and (max-width: 374px) {
+  h1{
+    display: block;
+  }
+  main body header footer{
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .imgsr2 {
+    display: none;
+  }
+  .imgsr {
+    display: block;
+  }
+  .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 13rem;
+  }
+  .wrap2{
+    margin-left: 0;
+  }
+  .screen{
+    display: block;
+    margin-top: -105px;
+    margin-right: 108px;
+  }
+  .art2{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 1000px;
+    max-height: 497px;
+    padding: 1.8rem ;
+    margin: 12rem 0 0;
+    position: relative;
+    background-color: var(--art-color);
+    padding: 1.6rem ;
+    /*max-width: max-content;*/
+    margin: 1.2rem auto 0;
+  }
+  .blockdemo{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1.8rem ;
+  padding-top: 18rem;
+    margin: 1.2rem 0 0;
+  }
+  .blockbaby{
+    display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 9rem;
+  }
+  .width-1146px {
+    /*padding: 0 80px;*/
+    padding: 0 80px;
+    
+  }
+  .logoimg{
+    max-width: 230px;
+    max-height: 77px;
+
+  }
+  .baby{
+    display: none;
+    margin-top: -20px;
+  }
+  .gradient-baby{
+    display: none;
+  }
+  .baby2{
+    display: block;
+    margin-top: -40px;
+  }
+  .gradient-baby2{
+    display: block;
+    max-height: 560px;
+  max-width: 560px;
+  }
+  .adapt{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  .adapt2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 18rem;
+  }
+  .adapt3{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18rem;
+    margin-bottom: 9rem;
+  }
+  .imgad{
+    width: 38rem;
+    height: 60.7rem;
+    margin-top: 5px;
+  }
+  .imgad2{
+    width: 42.9rem;
+    height: 65.9rem;
+    margin-top: -50px;
+  }
+  .imgad3{
+    width: 34.4rem;
+    height: 59.6rem;
+    margin-top: -50px;
+  }
+  .gradient{
+    width: 69.4rem;
+    height: 53rem;
+  }
+  .gradient2{
+    width: 55.8rem;
+    height: 55.8rem;
+    border-radius: 50%;
+    
+  }
+  .tt{
+    text-align: left;
+    max-width: 52.3rem;
+    font-size: 4.8rem;
+    line-height: 62px;
+    margin-top: 4.8rem;
+  }
+  .hstep{
+    font-size: 4.2rem;
+  }
+  h2 h4{
+    font-size: 4.2rem;
+  }
+  h4{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  h3{
+    font-size: 3.6rem;
+  }
+  .why{
+    font-size: 2.1rem;
+    line-height: 31px;
+    max-width: 46rem;
+  }
+  .for{
+    font-size: 2rem;
+    line-height: 26px;
+  }
+  .whytt{
+    font-size: 1.6rem;
+    line-height: 23px;
+    max-width: 363px;
+    margin-top: 2rem ;
+    margin-bottom: 0;
+  }
+  .f{
+    font-size: 1.4rem;
+    line-height: 25px;
+    margin-top: 0;
+  }
+  .buttonBOOK {
+    margin-left: 0;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .lets{
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+  .content4{
+    display: flex;
+  flex-wrap: nowrap;
+  }
+}
