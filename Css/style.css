@@ -287,7 +287,7 @@ main {
   background-color: var(--art-color);
   padding: 1.6rem 4.8rem;
   /*max-width: max-content;*/
-  margin: 1.4rem auto 0;
+  margin: 1.4rem 3rem 0;
 }
 
 .art2{
