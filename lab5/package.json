@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "lab5",
     "version": "1.0.0",
     "description": "",
@@ -16,3 +17,22 @@
     "author": "Kochneva",
     "license": "ISC"
   }
+=======
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "serve": "nodemon main.js"
+  },
+  "author": "Kochneva",
+  "license": "ISC"
+}
+>>>>>>> 9eac159adbbca81c84de6a7924338f6254261ac9
